@@ -1,13 +1,69 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-Soft-red: #ec775f;
+  --primary-Cyan: #76b5bc;
+  --Dark-brown: #381417;
+  --Medium-brown: #93867b;
+  --Cream: #f8e9dd;
+  --Very-pale-orange: #fffaf5;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+#root {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--Cream);
+}
+
+.App {
+  width: 94%;
+  max-width: 525px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes opacity-before {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+.attribution {
+  color: var(--primary-Cyan);
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+a {
+  color: var(--primary-Soft-red);
+  text-decoration: none;
+}
+
+@media only screen and (min-width:500px) {
+  .attribution {
+    font-size: 17px;
+  }
 }
